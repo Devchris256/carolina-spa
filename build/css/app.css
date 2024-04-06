@@ -472,4 +472,65 @@ a {
   font-size: 1.75rem;
   margin: 0;
 }
+
+.date {
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3.125rem 0;
+  text-align: center;
+}
+@supports (background-image: url("../img/bg_citas.jpg")) {
+  .date {
+    background-image: url("../img/bg_citas.jpg");
+  }
+}
+@supports (background-image: url("../img/bg_citas.webp")) {
+  .date {
+    background-image: url("../img/bg_citas.webp");
+  }
+}
+@supports (background-image: url("../img/bg_citas.avif")) {
+  .date {
+    background-image: url("../img/bg_citas.avif");
+  }
+}
+.date__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-size: 3.75rem;
+}
+.date__text {
+  max-inline-size: 37.5rem;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 2;
+}
+.date__link {
+  background-color: #8ed3cc;
+  padding: 1.25rem 1.25rem;
+  color: #FFFFFF;
+  -webkit-margin-before: 1.25rem;
+          margin-block-start: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+  padding: 1.25rem 6.25rem;
+}
+@media (min-width: 768px) {
+  .date__link {
+    width: auto;
+  }
+}
+.date__link:hover {
+  background-color: #69c5bb;
+}
 /*# sourceMappingURL=app.css.map */

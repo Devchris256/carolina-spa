@@ -1,0 +1,31 @@
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+.date {
+    @include m.bgformat(null, url('../img/bg_citas.jpg'));
+    @include m.bgformat(null, url('../img/bg_citas.webp'));
+    @include m.bgformat(null, url('../img/bg_citas.avif'));
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3.125rem 0;
+    text-align: center;
+
+    &__title {
+        @include m.heading;
+        color: v.$white;
+        font-size: 3.75rem;
+    }
+
+    &__text {
+        max-inline-size: 37.5rem;
+        margin: 0 auto;
+        color: v.$white;
+        line-height: 2;
+    }
+
+    &__link {
+        @include m.button(v.$primary, v.$white);
+        padding: 1.25rem 6.25rem;
+    }
+}

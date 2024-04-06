@@ -533,4 +533,43 @@ a {
 .date__link:hover {
   background-color: #69c5bb;
 }
+
+.footer {
+  -webkit-padding-after: 3.125rem;
+          padding-block-end: 3.125rem;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__widget {
+  text-align: center;
+}
+.footer__widget:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-size: 2.125rem;
+}
+.footer__text {
+  line-height: 1.8;
+}
+.footer__copyright {
+  text-align: center;
+  max-inline-size: 75rem;
+  margin: 1.25rem auto 0 auto;
+  border-top: 1px solid #dfdfdf;
+  font-size: 1rem;
+  padding: 1.25rem;
+  color: #979797;
+}
 /*# sourceMappingURL=app.css.map */

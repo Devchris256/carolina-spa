@@ -1,0 +1,18 @@
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+
+.welcome {
+    text-align: center;
+
+    &__title {
+        @include m.headingCursiva;
+    }
+    &__text{
+        font-size: 1.625rem;
+        color: v.$grey;
+        max-inline-size: 31.25rem;
+        margin: 2.5rem auto 0 auto;
+        line-height: 1.8;
+    }
+}

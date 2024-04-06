@@ -397,4 +397,79 @@ a {
   padding: 0.625rem;
   font-size: 1.375rem;
 }
+
+.productos__title {
+  text-align: center;
+  color: #e082a8;
+  font-family: "Italianno", sans-serif;
+  line-height: 0.8;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 2.5rem;
+  -webkit-margin-after: 3.125rem;
+          margin-block-end: 3.125rem;
+}
+.productos__title span {
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.productos__grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .productos__grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .productos__grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.producto__content {
+  background-color: #FFFFFF;
+  padding: 1.25rem;
+}
+.producto__mask {
+  overflow: hidden;
+}
+.producto__img {
+  inline-size: 100%;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 300ms;
+}
+.producto__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.producto__name {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-size: 1.5rem;
+  color: #e082a8;
+}
+.producto__description {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+.producto__price {
+  text-align: center;
+  color: #979797;
+  font-size: 1.75rem;
+  margin: 0;
+}
 /*# sourceMappingURL=app.css.map */

@@ -63,3 +63,16 @@
         font-family: v.$fontPrimary;
     }
 }
+
+@mixin heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+@mixin bgformat($gradient, $img) {
+    @supports(background-image: $img) {
+        background-image: $gradient, $img;
+    }
+}

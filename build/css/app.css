@@ -1,8 +1,207 @@
+@font-face {
+  font-family: "Italianno";
+  src: url("../fonts/Italianno-Regular.woff2") format("woff2"), url("../fonts/Italianno-Regular.woff") format("woff"), url("../fonts/Italianno-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/** Media Queries **/
+html {
+  font-size: 16px;
+}
+
 body {
-  background-color: #ff0000;
-  display: flex;
+  background-color: #f8f8f8;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+[class$=wrapper],
+.wrapper {
+  width: 95%;
+  max-inline-size: 75rem;
+  margin: 0 auto;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.5;
 }
 
 h1 {
-  color: purple;
+  font-size: 2.5rem;
 }
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+[class$=title] {
+  margin: 1.25rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #FFFFFF;
+  padding: 1.25rem 1.25rem;
+  color: #000;
+  -webkit-margin-before: 1.25rem;
+          margin-block-start: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+}
+@media (min-width: 768px) {
+  .btn {
+    width: auto;
+  }
+}
+.btn:hover {
+  background-color: #e6e6e6;
+}
+
+.boton-negro {
+  background-color: #000;
+  padding: 1.25rem 1.25rem;
+  color: #FFFFFF;
+  -webkit-margin-before: 1.25rem;
+          margin-block-start: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+}
+@media (min-width: 768px) {
+  .boton-negro {
+    width: auto;
+  }
+}
+.boton-negro:hover {
+  background-color: black;
+}
+
+.header {
+  -webkit-padding-before: 3.125rem;
+          padding-block-start: 3.125rem;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navigation {
+  background-color: #8ed3cc;
+  padding: 0.3rem 0;
+  margin: 1.25rem 0;
+}
+.navigation__border {
+  border-block: 2px dashed #FFFFFF;
+  padding: 1rem 0;
+}
+.navigation__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .navigation__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navigation__link {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+.sociales {
+  margin: 3.125rem 0;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .sociales {
+    margin: 0;
+  }
+}
+.sociales__link::before {
+  content: "";
+  padding: 1.25rem;
+  display: inline-block;
+}
+.sociales__link[href*="facebook.com"]::before {
+  background-image: url(../img/icono_facebook.svg);
+}
+.sociales__link[href*="x.com"]::before {
+  background-image: url(../img/icono_twitter.svg);
+}
+.sociales__link[href*="instagram.com"]::before {
+  background-image: url(../img/icono_instagram.svg);
+}
+.sociales__link[href*="youtube.com"]::before {
+  background-image: url(../img/icono_youtube.svg);
+}
+.sociales__link[href*="tiktok.com"]::before {
+  background-image: url(../img/icono_tiktok.svg);
+}
+/*# sourceMappingURL=app.css.map */

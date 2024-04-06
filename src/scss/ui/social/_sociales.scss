@@ -1,0 +1,37 @@
+@use '../../base/variables' as v;
+@use '../../base/minxis' as m;
+
+.sociales {
+    margin: 3.125rem 0;
+    display: flex;
+
+    @include m.tablet { 
+        margin: 0;
+    }
+
+    &__link {
+       
+        &::before {
+            content: '';
+            padding: 1.25rem;
+            display: inline-block;
+        }    
+
+        &[href*="facebook.com"]::before {
+            background-image: url(../img/icono_facebook.svg);
+        }
+        &[href*="x.com"]::before {
+            background-image: url(../img/icono_twitter.svg);
+        }
+        &[href*="instagram.com"]::before {
+            background-image: url(../img/icono_instagram.svg);
+        }
+        &[href*="youtube.com"]::before {
+            background-image: url(../img/icono_youtube.svg);
+        }
+        &[href*="tiktok.com"]::before {
+            background-image: url(../img/icono_tiktok.svg);
+        }
+    }
+
+}

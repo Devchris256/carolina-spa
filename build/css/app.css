@@ -254,13 +254,17 @@ a {
 }
 .card__img {
   inline-size: 100%;
+  height: auto;
+  box-sizing: border-box;
   border: 0.25rem solid #FFFFFF;
   transition-property: rotate scale;
   transition-duration: 300ms;
 }
-.card__img:hover {
-  -webkit-transform: rotate(4deg) scale(1.3);
-          transform: rotate(4deg) scale(1.3);
+@media (min-width: 768px) {
+  .card__img:hover {
+    -webkit-transform: rotate(4deg) scale(1.3);
+            transform: rotate(4deg) scale(1.3);
+  }
 }
 .card__content {
   max-inline-size: 90%;
@@ -444,6 +448,7 @@ a {
 }
 .producto__img {
   inline-size: 100%;
+  height: auto;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
@@ -532,6 +537,11 @@ a {
 }
 .date__link:hover {
   background-color: #69c5bb;
+}
+
+.slider__img {
+  inline-size: 100%;
+  height: auto;
 }
 
 .footer {

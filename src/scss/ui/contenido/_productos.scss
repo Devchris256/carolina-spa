@@ -30,6 +30,7 @@
     }
     &__img {
         inline-size: 100%;
+        height: auto;
         transition-property: transform;
         transition-duration: 300ms;
         &:hover {
